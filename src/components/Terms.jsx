@@ -1,0 +1,4 @@
+import { useState } from 'react'
+import { motion } from 'framer-motion'
+const terms=['Cake will be photographed as proof of expense.','Sponsor gets the first slice (guaranteed) and eternal gratitude.','Refunds not available, but hugs are.','Failure to respond will be treated as silent approval.']
+export default function Terms(){const [open,setOpen]=useState(false);return <motion.section initial={{opacity:0,y:22}} whileInView={{opacity:1,y:0}} viewport={{once:true}} className="paper-card mb-8 rounded-xl"><button onClick={()=>setOpen(!open)} className="flex min-h-14 w-full items-center justify-between px-5 text-left font-serif text-xl font-bold" aria-expanded={open}>Terms & Conditions <span aria-hidden>{open?'−':'+'}</span></button>{open&&<ol className="space-y-3 border-t border-[#C9A227]/25 px-6 py-5 text-sm text-slate-700">{terms.map((x,i)=><li key={x}>{i+1}. {x}</li>)}</ol>}</motion.section>}

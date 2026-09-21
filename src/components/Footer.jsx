@@ -1,0 +1,1 @@
+export default function Footer({committee}){return <footer className="border-t border-[#C9A227]/25 px-5 py-8 text-center text-xs text-slate-600"><p>© {committee}. All rights reserved. No cakes were harmed in the making of this proposal.</p><p className="mt-2">Made with 💛 and desperation</p></footer>}

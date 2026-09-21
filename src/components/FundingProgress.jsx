@@ -1,0 +1,3 @@
+import { motion } from 'framer-motion'
+import config from '../config'
+export default function FundingProgress({funded}){const pct=Math.min(100,Math.round(funded/config.amount*100)); return <section className="mb-8 rounded-xl border border-[#C9A227]/35 bg-white/65 p-4" aria-label="Funding progress"><div className="flex justify-between text-sm font-bold"><span>Funding Progress <span className="font-normal text-slate-500">(currently sad)</span></span><span>₹{funded.toLocaleString('en-IN')} / ₹{config.amount.toLocaleString('en-IN')}</span></div><div className="mt-3 h-3 overflow-hidden rounded-full bg-[#1B2A49]/10"><motion.div className="h-full rounded-full bg-[#FF5C8A]" animate={{width:`${pct}%`}} transition={{type:'spring',bounce:.15}}/></div></section>}

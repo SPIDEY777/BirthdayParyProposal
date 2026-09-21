@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { margin:0; color:#1B2A49; background:#FBF6EC; font-family:Inter,sans-serif; overflow-x:hidden; }
+button,a { -webkit-tap-highlight-color: transparent; }
+button:focus-visible,a:focus-visible,input:focus-visible { outline:3px solid #FF5C8A; outline-offset:3px; }
+.paper-bg { background-color:#FBF6EC; background-image: radial-gradient(rgba(27,42,73,.07) .7px,transparent .7px), linear-gradient(120deg,rgba(201,162,39,.07),transparent 40%); background-size:9px 9px,auto; }
+.paper-card { background:rgba(255,252,245,.9); border:1px solid rgba(201,162,39,.28); box-shadow:0 12px 35px rgba(27,42,73,.10); }
+.stamp { display:inline-block; font-family:"Special Elite",monospace; font-weight:700; color:#B3261E; border:3px solid #B3261E; padding:.45rem .6rem; letter-spacing:.04em; transform:rotate(-5deg); opacity:.85; }
+.stamp-green { color:#227447; border-color:#227447; }
+.typewriter { overflow:hidden; white-space:nowrap; border-right:2px solid #C9A227; width:0; animation:typing 2.2s steps(34,end) .25s forwards, blink .7s step-end infinite; }
+@keyframes typing { to { width:100%; } } @keyframes blink { 50% { border-color:transparent; } }
+.gold-glow { animation: glow 1.7s ease-in-out infinite; } @keyframes glow { 50% { box-shadow:0 0 0 7px rgba(201,162,39,.16),0 10px 20px rgba(201,162,39,.35); } }
+.signature { font-family:"Special Elite",monospace; transform:rotate(-4deg); }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } }
