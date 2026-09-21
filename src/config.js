@@ -6,5 +6,5 @@ export default {
   amount: 2000,
   minNegotiable: 1800,
   upiId: "9336715491@ibl",
-  whatsappNumber: "91XXXXXXXXXX"
+  whatsappNumber: "9336715491"
 }
